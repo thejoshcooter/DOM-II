@@ -29,3 +29,8 @@ inputs.forEach((input) => {
         console.log('keydown success');
     });
 });
+
+const nav = document.querySelector('nav');
+    window.addEventListener('resize', () => {
+        nav.classList.toggle('reverse');
+});
