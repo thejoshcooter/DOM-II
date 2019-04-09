@@ -13,3 +13,13 @@ document.addEventListener('wheel', () => {
 document.addEventListener('scroll', () => {
     container.style.backgroundColor = '#ffedcc';
 });
+
+const btns = document.querySelectorAll('.btn');
+btns.forEach((btn) => { btn.addEventListener('click', () => {
+    window.alert('SUCCESS!');
+})});
+
+const inputs = document.querySelectorAll('.input');
+inputs.forEach((input) => { input.addEventListener('focus', (event) => {
+    event.currentTarget.style.color = '#9400D3';
+})});
