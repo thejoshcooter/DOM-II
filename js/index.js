@@ -20,6 +20,12 @@ btns.forEach((btn) => { btn.addEventListener('click', () => {
 })});
 
 const inputs = document.querySelectorAll('.input');
-inputs.forEach((input) => { input.addEventListener('focus', (event) => {
-    event.currentTarget.style.color = '#9400D3';
-})});
+inputs.forEach((input) => { 
+    input.addEventListener('focus', (event) => {
+        event.currentTarget.style.color = '#9400D3';
+    });
+    
+    input.addEventListener('keydown', (event) => {
+        console.log('keydown success');
+    });
+});
