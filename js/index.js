@@ -28,6 +28,10 @@ inputs.forEach((input) => {
     input.addEventListener('keydown', (event) => {
         console.log('keydown success');
     });
+    
+    input.addEventListener('blur', (event) => {
+        event.currentTarget.style.color = '#ae3030';
+    });
 });
 
 const nav = document.querySelector('nav');
